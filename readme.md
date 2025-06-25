@@ -100,7 +100,7 @@ Sistem, belirlenen hedef nemin altına düştüğünde (Histerezis değeri dikka
 
 **Alarm Durumunda Röle Kontrolü:**
 
-* **Düşük Nem Alarmı:** Nem çok düşük eşiğin altına düştüğünde, nemlendirici daha uzun süre, **5 saniye açılır ve 10 saniye kapalı kalır.**
+* **Düşük Nem Alarmı:** Nem çok düşük eşiğin altına düştüğünde, nemlendirici daha uzun süre, **5 saniye açılır ve 5 saniye kapalı kalır.**
 * **Yüksek Nem Alarmı:** Nem çok yüksek eşiğin üzerine çıktığında, nemlendirici tamamen kapatılır.
 
 ## Katkıda Bulunma
