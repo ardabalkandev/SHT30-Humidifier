@@ -21,7 +21,7 @@ Bu proje, bir Arduino kartı kullanarak ortam nemini ve sıcaklığını izleyen
 
 * **Arduino Uno/Nano** (veya uyumlu bir Arduino kartı)
 * **SHT31 Dijital Nem ve Sıcaklık Sensörü** (I2C uyumlu)
-* **16x2 I2C LCD Ekran Modülü**
+* **16x2 I2C LCD Ekran Modülü** (I2C uyumlu)
 * **1 Kanal Röle Modülü**
 * **Buzzer** (Pasif veya Aktif)
 * **LED** (Durum göstergesi veya alarm için, 220 Ohm direnç ile)
