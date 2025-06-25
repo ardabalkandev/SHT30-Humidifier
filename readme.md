@@ -72,7 +72,7 @@ Aşağıdaki bağlantılar Arduino Uno/Nano pinlerine göre verilmiştir. Diğer
     * `Tools > Board` menüsünden kullandığınız Arduino kartını seçin (örn: "Arduino Uno").
     * `Tools > Port` menüsünden Arduino'nuzun bağlı olduğu seri portu seçin.
     * Kodu Arduino kartınıza yüklemek için "Upload" (Yükle) butonuna tıklayın.
-4.  **Test Edin ve Kalibre Edin:**
+4.  **Test Edin:**
     * Sistem başlatıldığında açılış mesajını göreceksiniz.
     * `SET` butonu ile ayar modları arasında geçiş yapın.
     * `PLUS` ve `MINUS` butonları ile değerleri ayarlayın. Basılı tutma özelliği sayesinde hızlıca ayarlama yapabilirsiniz.
