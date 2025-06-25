@@ -34,7 +34,7 @@ const unsigned long NORMAL_RELAY_ON_DURATION = 3000; // 3 saniye
 const unsigned long NORMAL_RELAY_OFF_DURATION = 12000; // 12 saniye
 
 const unsigned long ALARM_LOW_HUMIDITY_ON_DURATION = 5000; // 5 saniye (Alarm durumunda düşük nem için)
-const unsigned long ALARM_LOW_HUMIDITY_OFF_DURATION = 10000; // 10 saniye (Alarm durumunda düşük nem için)
+const unsigned long ALARM_LOW_HUMIDITY_OFF_DURATION = 5000; // 5 saniye (Alarm durumunda düşük nem için)
 
 bool isHumidityLowForRelay = false; // Röleyi tetikleyecek kadar düşük nem durumu
 
