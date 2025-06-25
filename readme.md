@@ -1,6 +1,6 @@
 # Smart Humidity Control System (SHT31 & Arduino)
 
-[Click here for Turkish Version / Türkçe Versiyon için Buraya Tıklayın](README_tr.md)
+Türkçe Versiyon için => README_tr.md
 
 This project is a smart humidity control system that monitors ambient humidity and temperature using an Arduino board, automatically maintains specific humidity levels, and provides visual and audible warnings when thresholds are exceeded. The system uses a relay to control a humidifier (or dehumidifier) and features a user-friendly interface.
 
