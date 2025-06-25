@@ -22,8 +22,8 @@ Bu proje, bir Arduino kartı kullanarak ortam nemini ve sıcaklığını izleyen
 * **Arduino Uno/Nano** (veya uyumlu bir Arduino kartı)
 * **SHT31 Dijital Nem ve Sıcaklık Sensörü** (I2C uyumlu)
 * **16x2 I2C LCD Ekran Modülü** (I2C uyumlu)
-* **1 Kanal Röle Modülü**
-* **Buzzer** (Pasif veya Aktif)
+* **1 Kanal Röle Modülü** (5V)
+* **Buzzer** (Pasif röle kullanılmıştır)
 * **LED** (Durum göstergesi veya alarm için, 220 Ohm direnç ile)
 * **4 Adet Push Buton** (`SET`, `MINUS`, `PLUS`, `MANUAL`)
 * **Jumper Kablolar**
@@ -31,7 +31,7 @@ Bu proje, bir Arduino kartı kullanarak ortam nemini ve sıcaklığını izleyen
 * **220 Ohm Direnç** (LED için)
 * **USB Kablosu** (Arduino'yu programlamak ve beslemek için)
 * **5V Güç Kaynağı** (Sistem için)
-* **Nemlendirici / Nem Alıcı** (Röle ile kontrol edilecek cihaz)
+* **Nemlendirici / Nem Alıcı** (Röle ile kontrol edilecek cihaz, ben bu sistemde 220V solenoid valf [normalde kapalı tip] ile kontrol edilen iki adet su püskürtücü nozzle kullandım)
 
 ## Bağlantı Şeması
 
