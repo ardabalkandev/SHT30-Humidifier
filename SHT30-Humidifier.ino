@@ -459,24 +459,26 @@ void controlHumidifier() {
 }
 
 void runHumidifier(unsigned long onDuration, unsigned long offDuration) {
-  unsigned long currentTime = millis();
-
-  if (!isRelayActive && (currentTime - relayActiveStartTime >= offDuration || relayActiveStartTime == 0)) {
-    digitalWrite(RELAY_PIN, LOW);
-    if (!isAlarmActive) digitalWrite(LED_PIN, HIGH);
-    isRelayActive = true;
-    relayActiveStartTime = currentTime;
-    Serial.print("Nemlendirme Baslatildi (");
-    Serial.print(onDuration / 1000);
-    Serial.println("s)");
-  } else if (isRelayActive && (currentTime - relayActiveStartTime >= onDuration)) {
-    digitalWrite(RELAY_PIN, HIGH);
-    if (!isAlarmActive) digitalWrite(LED_PIN, LOW);
-    isRelayActive = false;
-    Serial.print("Nemlendirme Durduruldu (");
-    Serial.print(offDuration / 1000);
-    Serial.println("s Dinlenme)");
-  }
+  //unsigned long currentTime = millis();
+//
+  //if (!isRelayActive && (currentTime - relayActiveStartTime >= offDuration || relayActiveStartTime == 0)) {
+  //  digitalWrite(RELAY_PIN, LOW);
+  //  if (!isAlarmActive) digitalWrite(LED_PIN, HIGH);
+  //  isRelayActive = true;
+  //  relayActiveStartTime = currentTime;
+  //  Serial.print("Nemlendirme Baslatildi (");
+  //  Serial.print(onDuration / 1000);
+  //  Serial.println("s)");
+  //} else if (isRelayActive && (currentTime - relayActiveStartTime >= onDuration)) {
+  //  ////////////////////////////////
+  //  //digitalWrite(RELAY_PIN, HIGH);
+  //  ////////////////////////////////
+  //  if (!isAlarmActive) digitalWrite(LED_PIN, LOW);
+  //  isRelayActive = false;
+  //  Serial.print("Nemlendirme Durduruldu (");
+  //  Serial.print(offDuration / 1000);
+  //  Serial.println("s Dinlenme)");
+  //}
 }
 
 void stopHumidifier() {
