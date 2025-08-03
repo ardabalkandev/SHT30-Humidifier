@@ -23,17 +23,17 @@ float currentHumidity = 0.0;
 float currentTemperature = 0.0;
 int setHumidity = 50; // Varsayılan ayarlı nem değeri
 bool isFahrenheit = false; // Varsayılan sıcaklık birimi Celsius
-const int HYSTERESIS = 2; // Histerezis değeri
+const int HYSTERESIS = 0.5; // Histerezis değeri
 unsigned long lastSensorReadTime = 0;
-const unsigned long SENSOR_READ_INTERVAL = 2000; // 2 saniye
+const unsigned long SENSOR_READ_INTERVAL = 5000; // 2 saniye
 
 // Röle ve LED Kontrolü
 bool isRelayActive = false;
 unsigned long relayActiveStartTime = 0;
-const unsigned long NORMAL_RELAY_ON_DURATION = 3000; // 3 saniye
-const unsigned long NORMAL_RELAY_OFF_DURATION = 12000; // 12 saniye
+const unsigned long NORMAL_RELAY_ON_DURATION = 5000; // 3 saniye
+const unsigned long NORMAL_RELAY_OFF_DURATION = 10000; // 12 saniye
 
-const unsigned long ALARM_LOW_HUMIDITY_ON_DURATION = 5000; // 5 saniye (Alarm durumunda düşük nem için)
+const unsigned long ALARM_LOW_HUMIDITY_ON_DURATION = 10000; // 5 saniye (Alarm durumunda düşük nem için)
 const unsigned long ALARM_LOW_HUMIDITY_OFF_DURATION = 5000; // 5 saniye (Alarm durumunda düşük nem için)
 
 bool isHumidityLowForRelay = false; // Röleyi tetikleyecek kadar düşük nem durumu
@@ -66,9 +66,9 @@ SystemState currentState = NORMAL_MODE;
 bool isAlarmActive = false;
 bool isLowHumidityAlarm = false; // Nem düşüklüğünden mi, yüksekliğinden mi alarm var?
 unsigned long lastAlarmToggleTime = 0;
-const unsigned long ALARM_BUZZER_DURATION = 1000; // 1 saniye
+const unsigned long ALARM_BUZZER_DURATION = 500; // 1 saniye
 const unsigned long ALARM_PAUSE_DURATION = 500; // 500 ms
-const int ALARM_FREQUENCY = 2000; // 2000 Hz
+const int ALARM_FREQUENCY = 3000; // 2000 Hz
 
 // Alarm Eşik Değerleri (yüzde değil, doğrudan nem değeri farkı olarak tutuluyor)
 int lowAlarmThresholdOffset = 15;  // Varsayılan: ayarlı nemin 15 birim altı
